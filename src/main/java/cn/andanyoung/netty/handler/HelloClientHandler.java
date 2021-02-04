@@ -1,4 +1,4 @@
-package cn.andanyoung.netty;
+package cn.andanyoung.netty.handler;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

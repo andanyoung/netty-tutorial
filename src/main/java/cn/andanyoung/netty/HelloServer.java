@@ -1,5 +1,7 @@
 package cn.andanyoung.netty;
 
+import cn.andanyoung.netty.handler.ConnectStatusHandler;
+import cn.andanyoung.netty.handler.HelloServerHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -51,6 +53,7 @@ public final class HelloServer {
                   ChannelPipeline p = ch.pipeline();
                   // 5.可以自定义客户端消息的业务处理逻辑
                   p.addLast(new HelloServerHandler());
+                  p.addLast(new ConnectStatusHandler());
                 }
               });
       // 6.绑定端口,调用 sync 方法阻塞知道绑定完成
