@@ -46,6 +46,7 @@ public final class HelloServer {
           .handler(new LoggingHandler(LogLevel.INFO))
           // 4.指定 IO 模型
           .channel(NioServerSocketChannel.class)
+              //设置客户端handle
           .childHandler(
               new ChannelInitializer<SocketChannel>() {
                 @Override
