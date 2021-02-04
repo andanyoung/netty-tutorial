@@ -1,6 +1,6 @@
-package cn.andanyoung.netty;
+package cn.andanyoung.netty.demo;
 
-import cn.andanyoung.netty.handler.HelloClientHandler;
+import cn.andanyoung.netty.demo.handler.HelloClientHandler;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;

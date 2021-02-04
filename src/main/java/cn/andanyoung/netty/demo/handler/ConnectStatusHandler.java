@@ -1,4 +1,4 @@
-package cn.andanyoung.netty.handler;
+package cn.andanyoung.netty.demo.handler;
 
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
